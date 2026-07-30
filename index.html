@@ -187,24 +187,17 @@
                     <p class="mt-3 text-slate-400 text-sm">Submit your details below. We'll send you a custom video teardown of your site with 3 actionable fixes.</p>
                 </div>
 
-                <form id="auditForm" class="mt-8 space-y-4">
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Your Name</label>
-                        <input type="text" id="leadName" required placeholder="John Doe" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-purple-500 transition-colors">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Work Email</label>
-                        <input type="email" id="leadEmail" required placeholder="john@company.com" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-purple-500 transition-colors">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Website URL</label>
-                        <input type="url" id="leadWebsite" required placeholder="https://yourcompany.com" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-purple-500 transition-colors">
-                    </div>
+              <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- Replace with your actual Access Key -->
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
-                    <button type="submit" id="submitBtn" class="w-full py-4 text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 rounded-xl shadow-lg transition-all duration-200">
-                        Claim Your Free Audit →
-                    </button>
-                </form>
+    <!-- Your existing input fields (make sure each has a 'name' attribute) -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="url" name="website_url" placeholder="Website URL" required>
+
+    <button type="submit">Claim Your Free Audit</button>
+</form>
 
                 <!-- Status Feedback Banner -->
                 <div id="formStatus" class="hidden mt-6 p-4 rounded-xl text-center text-sm font-semibold"></div>
