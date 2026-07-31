@@ -179,45 +179,12 @@
     </section>
 
     <!-- PocketBase Free Audit Lead Form -->
-<form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 1rem; width: 100%; margin-top: 2rem;">
-  <!-- Your Web3Forms Key -->
+<form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="3cc4dc03-80fc-446a-aeaa-8654174670be">
-  <input type="hidden" name="subject" value="New Free Audit Lead Submission">
-
-  <!-- Name Input -->
-  <input 
-    type="text" 
-    name="name" 
-    placeholder="Your Name" 
-    required 
-    style="width: 100%; padding: 0.75rem 1rem; background-color: #0f172a; border: 1px solid #334155; border-radius: 0.5rem; color: #ffffff; outline: none;"
-  >
-
-  <!-- Email Input -->
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Your Email" 
-    required 
-    style="width: 100%; padding: 0.75rem 1rem; background-color: #0f172a; border: 1px solid #334155; border-radius: 0.5rem; color: #ffffff; outline: none;"
-  >
-
-  <!-- Website URL Input -->
-  <input 
-    type="url" 
-    name="website_url" 
-    placeholder="https://example.com" 
-    required 
-    style="width: 100%; padding: 0.75rem 1rem; background-color: #0f172a; border: 1px solid #334155; border-radius: 0.5rem; color: #ffffff; outline: none;"
-  >
-
-  <!-- Submit Button -->
-  <button 
-    type="submit" 
-    style="width: 100%; padding: 0.75rem 1rem; background-color: #9333ea; color: #ffffff; font-weight: 600; border-radius: 0.5rem; border: none; cursor: pointer;"
-  >
-    Claim Your Free Audit
-  </button>
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit Form</button>
 </form>
 
                 <!-- Status Feedback Banner -->
